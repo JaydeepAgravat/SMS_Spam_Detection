@@ -3,7 +3,8 @@ from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 import re
 import numpy as np
-
+import nltk
+nltk.download('punkt')
 
 class TextCleanerWithStemming(BaseEstimator, TransformerMixin):
     def __init__(self):

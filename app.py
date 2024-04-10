@@ -1,12 +1,14 @@
+from pathlib import Path
 import pickle
 import os
 from transformers import *
 import streamlit as st
 
 # Load pre-trained model
-with open('text_classification_pipeline.pkl', 'rb') as file:
-    loaded_pipeline = pickle.load(file)
+file_path = Path("text_classification_pipeline.pkl")
 
+with open(file_path, 'rb') as file:
+    loaded_pipeline = pickle.load(file)
 
 # Function to predict spam or ham
 def predict_spam_or_ham(text):
