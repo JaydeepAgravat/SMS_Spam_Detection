@@ -1,6 +1,6 @@
 # SMS Spam Detection
 
-> [WEB APP](https://smsspamdetection-ex224c7agwhtugp36smnhg.streamlit.app/)
+> [WEB APP](https://sms-spam--detection.streamlit.app/)
 
 **Main objective**
 
